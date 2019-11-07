@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.lti.hibernate_ex.hibernate_project">
+<class name="Student" table="stud">
+<id name="roll_num" column="roll_num">
+<generator class="sequence" >
+<param name="sequence">emp_seq</param>
+</generator>
+</id>
+
+<property name="name" column="name"/>
+<property name="dept" column="dept"/>
+</class>
+</hibernate-mapping>
