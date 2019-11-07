@@ -15,7 +15,7 @@ public class App
         SessionFactory fact = conf.buildSessionFactory(build.build());
         Session session=fact.openSession();
         Student stu=new Student();
-        stu.setRoll_num(1);
+        //stu.setRoll_num(1);
         stu.setName("anu");
         stu.setDept("cs");
         session.beginTransaction();
